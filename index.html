@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pupuseria Rosita | Authentic Salvadoran Food in Utah</title>
+<link rel="icon" type="image/jpeg" href="ico.jpeg">
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('ico.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-weight:800;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.whatsapp-float{
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:white;
+    padding:15px 18px;
+    border-radius:50%;
+    font-size:24px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    text-decoration:none;
+}
+
+footer{
+    background:#111;
+    color:white;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Pupuseria Rosita</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div>
+        <h1>Pupuseria Rosita</h1>
+        <p class="lead">Authentic Salvadoran Street Food in Utah</p>
+        <a href="#menu" class="btn btn-warning btn-lg mt-3">View Menu</a>
+    </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="py-5">
+<div class="container">
+    <h2 class="text-center mb-5 fw-bold">Our Menu</h2>
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://cookingwithkids.org/wp-content/uploads/2022/12/Pupusas_350x350.jpg" class="card-img-top" height="400">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Classic Pupusas</h5>
+                    <p class="card-text">Handmade Salvadoran pupusas filled with cheese, beans, or pork.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://www.espressomykitchen.com/wp-content/uploads/2024/04/EMK-The-Ultimate-California-Burrito-hero.jpg" class="card-img-top" height="400">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Burritos</h5>
+                    <p class="card-text">Large burritos filled with your choice of meat and fresh ingredients.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://foodmetamorphosis.com/wp-content/uploads/2025/05/yuca-frita-fried-cassava.jpg" class="card-img-top" height="400">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Fried Yuca</h5>
+                    <p class="card-text">Crispy fried cassava served with traditional Salvadoran sauce.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="bg-light py-5">
+<div class="container text-center">
+    <h2 class="fw-bold mb-4">📍 Our Location</h2>
+    <p>We serve different areas around Utah every week.</p>
+    <p>Follow us on social media to see where we will be today!</p>
+
+    <iframe 
+        src="https://maps.google.com/maps?q=Utah&t=&z=7&ie=UTF8&iwloc=&output=embed"
+        width="100%" 
+        height="350" 
+        style="border:0;">
+    </iframe>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+<div class="container text-center">
+    <h2 class="fw-bold mb-4">Contact Us</h2>
+    <p>Phone:</p>
+    <p>Fasebook: @pupuseriarosita</p>
+    <a href="https://www.facebook.com/share/1Aqx2gi5dZ/" class="btn btn-success btn-lg mt-3">View Facebook Page</a>
+</div>
+</section>
+
+<footer class="text-center">
+    <p>© 2026 Pupuseria Rosita - Authentic Salvadoran Food in Utah</p>
+</footer>
+
+<!-- WhatsApp Floating -->
+<a href="https://wa.me/18011234567" class="whatsapp-float">💬</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
