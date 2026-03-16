@@ -55,6 +55,6 @@ jobs:
             fi
             docker load -i ~/image.tar
             docker tag ${{ github.repository_owner }}/${{ github.repository }}:latest web:latest
-            sed -i 's|image:.*|image: web:latest|' ~/docker-compose.yml
-            docker-compose -f ~/docker-compose.yml up -d
+            docker rm -f web || true
+            docker run -d --name web -p 80:80 --restart unless-stopped web:latest
             rm -f ~/image.tar
