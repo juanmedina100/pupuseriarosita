@@ -1,7 +1,6 @@
 async function loadMenu() {
   try {
     console.log('Intentando cargar menú desde API...');
-    // const response = await fetch('/api/menu');
     const response = await fetch('http://161.97.91.40:8079/menu/menues');
     
     if (!response.ok) {
